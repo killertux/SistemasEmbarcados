@@ -1,0 +1,10 @@
+ *---------------------------------------------------------------------------*
+ *                    Prof. André Schneider de Oliveira
+ *            Universidade Tecnológica Federal do Paraná (UTFPR)
+ *===========================================================================
+ * Autores das bibliotecas:
+ * 		Allan Patrick de Souza - <allansouza@alunos.utfpr.edu.br>
+ * 		Guilherme Jacichen     - <jacichen@alunos.utfpr.edu.br>
+ * 		Jessica Isoton Sampaio - <jessicasampaio@alunos.utfpr.edu.br>
+ * 		Mariana Carrião        - <mcarriao@alunos.utfpr.edu.br>
+ *===========================================================================*/

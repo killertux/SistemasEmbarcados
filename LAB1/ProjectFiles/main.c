@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "grlib/grlib.h"
 #include "KeyGenerator.h"
+#include "Flags.h"
 
 int main()
 {

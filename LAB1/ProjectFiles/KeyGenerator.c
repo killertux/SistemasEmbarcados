@@ -14,5 +14,14 @@ int init_key_generator()
 
 void key_generator()
 {
-	
+	key = 3;
+	while(1) {
+		if((prime == false && prime_await == false)
+			&&((passed_last == false && passed_last_await == false)
+			||(passed_penultimate == false && passed_penultimate_await == false))){
+				key +=2;
+				generated = true;
+				prime_await = true;
+			}
+	}
 }

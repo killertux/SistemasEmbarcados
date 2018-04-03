@@ -4,12 +4,13 @@
 #include <stdio.h>
 #include "grlib/grlib.h"
 #include "KeyGenerator.h"
-#include "Flags.h"
 
 int main()
 {
 	osKernelInitialize(); 
 	osKernelStart(); 
+	
+	init_key_generator();
 	
 	osDelay(osWaitForever);
 }

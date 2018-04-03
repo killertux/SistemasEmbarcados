@@ -1,17 +1,16 @@
 #ifndef FLAGS_H
 #define FLAGS_H
 
-#include "stdbool.h"
+void init_flags();
 
-bool generated = false;
-bool prime = false;
-bool prime_await = true;
-bool finished_decoding = false;
-bool passed_last = false;
-bool passed_last_await = true;
-bool passed_penultimate = false;
-bool passed_penultimate_await = true;
-
-int key;
+extern unsigned char generated;
+extern unsigned char prime;
+extern unsigned char prime_await;
+extern unsigned char finished_decoding;
+extern unsigned char passed_last;
+extern unsigned char passed_last_await;
+extern unsigned char passed_penultimate ;
+extern unsigned passed_penultimate_await ;
+extern int key;
 
 #endif

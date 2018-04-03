@@ -16,12 +16,12 @@ void key_generator()
 {
 	key = 3;
 	while(1) {
-		if((prime == false && prime_await == false)
-			&&((passed_last == false && passed_last_await == false)
-			||(passed_penultimate == false && passed_penultimate_await == false))){
+		if((prime == 0 && prime_await == 0)
+			&&((passed_last == 0 && passed_last_await == 0)
+			||(passed_penultimate == 0 && passed_penultimate_await == 0))){
 				key +=2;
-				generated = true;
-				prime_await = true;
+				generated = 1;
+				prime_await = 0;
 			}
 	}
 }

@@ -3,6 +3,7 @@
 
 #include "stdbool.h"
 #include "Flags.h"
+#include "gantt.h"
 
 unsigned char generated;
 unsigned char prime;
@@ -12,6 +13,7 @@ unsigned char passed_last;
 unsigned char passed_last_await;
 unsigned char passed_penultimate ;
 unsigned passed_penultimate_await ;
+struct GanttDiagram diagram;
 int key;
 
 void init_flags() {

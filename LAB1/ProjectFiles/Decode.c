@@ -20,8 +20,16 @@ void decode()
 	unsigned char *msg = msg1_bin;
 	unsigned int len  = msg1_bin_len;
 	while(1) {
-		if(prime == true && prime_await == false) {
-			
+		if(prime == 1 && prime_await == 0) {
+			for(len =0; len < 100; len++) {
+				int a = 0;
+				a++;
+				msg[1] = 'l';
+			}
+			finished_decoding = 3;
+			passed_last_await =1;
+			passed_penultimate_await =1;
+			osThreadYield();
 		}
 	}
 }

@@ -12,5 +12,6 @@ extern unsigned char passed_last_await;
 extern unsigned char passed_penultimate ;
 extern unsigned passed_penultimate_await ;
 extern int key;
+extern struct GanttDiagram diagram;
 
 #endif

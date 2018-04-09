@@ -1,7 +1,6 @@
 #include "cmsis_os.h"
 #include "Flags.h"
 #include "IsPrime.h"
-#include "stdbool.h"
 #include <math.h>
 
 osThreadId tid_Is_Prime;                            // thread id
@@ -16,23 +15,26 @@ int init_isPrime()
 
 void is_prime()
 {
-		int endPoint = (int) sqrt(key);
-	  int i = 3;
+		uint32_t endPoint = (uint32_t) sqrt(key);
+		uint32_t i = 3;
+		bool prime;
 	
 		while(1) {
-		     while (!prime_await) {
-		 
-		}
-		 
-
-     for(i = 3; i < endPoint; i+= 2) {
-         if (key % i == 0) {
-					 prime = false;
-           prime_await = false;
-				 }
-     }
-		 
-		 prime = true;
-     prime_await = false;
+			 while (!f_prime) {
+				 osThreadYield();
+			 }
+			 f_prime = false;
+			 prime  = true;
+			 for(i = 3; i < endPoint; i+= 2) {
+					 if (key % i == 0) {
+						 prime = false;
+						 f_generate = true;
+						 osThreadYield();
+						 break;
+					 }
+			 }
+			 if(prime)
+					f_decode = true;
+			 osThreadYield();
 	 }
 }

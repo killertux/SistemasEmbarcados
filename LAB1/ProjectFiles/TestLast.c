@@ -1,6 +1,8 @@
 #include "TestLast.h"
 #include "cmsis_os.h"
 #include "Flags.h"
+#include "stdlib.h"
+#include "utils.h"
 
 osThreadId tid_last;                            // thread id
 osThreadDef (test_last, osPriorityNormal, 1, 0);
@@ -14,26 +16,25 @@ int init_test_last()
 
 void test_last () 
 {
+	uint32_t last_word;
 	while(1) {
-		//tamanho = len(mensagens);
-
-		while(!finished_decoding) {
+		while(!f_test_last) {
+			osThreadYield();
 		}
-		finished_decoding--;
+		f_test_last = false;
+		last_word = getWord(msg + 34*4) + key ;
 
-		/*char ultima[4];
-		memcpy(penultima, &mensagens + (tamanho - 1) - 4, 4)
-		int* ultimaWord = (int*)ultima;
-	
-		if (key * key / lastPrime == ultimaWord) {
-			passed_last = 1;
-			terminou = 1;
-		}*/
-		osDelay(1000);
-			while(finished_decoding) {
+		
+		if (((key * key) / last_key) == last_word) {
+			passed_last = true;
+		} else {
+			passed_last = false;
 		}
-		passed_last = 0;
-		passed_last_await = 0;
+		
+		last_key = key;
+		
+		f_finished_test_last = true;
+		
 		osThreadYield();
 	}
 }

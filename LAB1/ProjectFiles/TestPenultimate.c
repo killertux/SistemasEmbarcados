@@ -1,6 +1,7 @@
 #include "TestPenultimate.h"
 #include "cmsis_os.h"
 #include "Flags.h"
+#include "utils.h"
 
 osThreadId tid_pen;                            // thread id
 osThreadDef (test_penultimate, osPriorityNormal, 1, 0);
@@ -14,27 +15,21 @@ int init_test_penultimate()
 
 void test_penultimate() 
 {
+	uint32_t penultimate_word;
 	while (1) {
-		//tamanho = len(mensagens);
-
-		while(!finished_decoding) {
+		while(!f_test_penultimate) {
+			osThreadYield();
 		}
-		finished_decoding--;
-
-		/*char penultima[4];
-		memcpy(penultima, &mensagens + (tamanho - 1) - 8, 4)
-		int* penultimaWord = (int*)penultima;
-	
-		if (key / 2 == penultimaWord) {
-			passed_penultimate = 1;
-			terminou = 1;
-		}*/	
-		osDelay(500);
+		f_test_penultimate = false;
+		penultimate_word = getWord(msg + 33*4) - key;
 		
-		while(finished_decoding) {
+		if ((key / 2) == penultimate_word) {
+			passed_penultimate = true;
+		} else {
+			passed_penultimate = false;
 		}
-		passed_penultimate = 0;
-		passed_penultimate_await = 0;
+
+		f_finished_test_penultimate = true;
 		osThreadYield();
 	}
 }

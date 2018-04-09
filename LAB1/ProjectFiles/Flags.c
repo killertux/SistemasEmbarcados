@@ -1,30 +1,49 @@
-#ifndef FLAGS_H
-#define FLAGS_H
-
 #include "stdbool.h"
 #include "Flags.h"
-#include "gantt.h"
+#include "stdint.h"
+#include "grlib/grlib.h"
 
-unsigned char generated;
-unsigned char prime;
-unsigned char prime_await;
-unsigned char finished_decoding;
-unsigned char passed_last;
-unsigned char passed_last_await;
-unsigned char passed_penultimate ;
-unsigned passed_penultimate_await ;
-struct GanttDiagram diagram;
-int key;
+#include "msg1.h"
+#include "msg2.h"
+#include "msg3.h"
+
+bool f_generate;
+bool f_prime;
+bool f_decode;
+bool f_test_last;
+bool f_test_penultimate;
+bool f_finished_test_last;
+bool f_finished_test_penultimate;
+bool f_end;
+bool passed_last;
+bool passed_penultimate ;
+uint32_t key;
+uint32_t last_key;
+uint32_t tick;
+unsigned char decoded_msg[35];
+unsigned char *msg;
+tContext sContext;
 
 void init_flags() {
-	generated = 0;
-	prime = 0;
-	prime_await = 0;
-	finished_decoding = 0;
-	passed_last = 0;
-	passed_last_await = 1;
-	passed_penultimate = 0;
-	passed_penultimate_await = 1;
+	f_generate = true;
+	f_prime = false;
+	f_decode = false;
+	f_test_last = false;
+	f_test_penultimate = false;
+	f_finished_test_last = false;
+	f_finished_test_penultimate = false;
+	f_end = false;
+	passed_last = false;
+	passed_penultimate = false;
+	last_key = 0;
+	key = 0;
+	#ifdef MSG1
+	msg = msg1_bin;
+	#endif
+	#ifdef MSG2
+	msg = msg2_bin;
+	#endif
+	#ifdef MSG3
+	msg = msg3_bin;
+	#endif
 }
-
-#endif

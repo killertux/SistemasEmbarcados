@@ -19,6 +19,7 @@
 
   <project>
     <PathAndName>.\grlib\grlib.uvprojx</PathAndName>
+    <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
 </ProjectWorkspace>

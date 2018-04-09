@@ -15,23 +15,26 @@ int init_isPrime()
 
 void is_prime()
 {
-		int endPoint = (int) sqrt(key);
-	  int i = 3;
+		uint32_t endPoint = (uint32_t) sqrt(key);
+		uint32_t i = 3;
+		bool prime;
 	
 		while(1) {
-			 while (generated) {
+			 while (!f_prime) {
+				 osThreadYield();
 			 }
-
+			 f_prime = false;
+			 prime  = true;
 			 for(i = 3; i < endPoint; i+= 2) {
 					 if (key % i == 0) {
-						 prime = 0;
-						 prime_await = 0;
+						 prime = false;
+						 f_generate = true;
 						 osThreadYield();
+						 break;
 					 }
 			 }
-			 
-			 prime = 1;
-			 prime_await = 0;
+			 if(prime)
+					f_decode = true;
 			 osThreadYield();
 	 }
 }

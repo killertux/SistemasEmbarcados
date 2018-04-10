@@ -15,15 +15,16 @@
 
 int main()
  {
-	osKernelInitialize(); 
-	init_flags();
-	
-	#ifndef DEBUG
+	 	#ifndef DEBUG
 	cfaf128x128x16Init();
 	GrContextInit(&sContext, &g_sCfaf128x128x16);
+	cfaf128x128x16Clear();
 	GrFlush(&sContext);
 	GrContextFontSet(&sContext, &g_sFontCmtt12);
 	#endif
+	 
+	osKernelInitialize(); 
+	init_flags();
 
 	init_key_generator();
 	init_isPrime();
@@ -34,7 +35,7 @@ int main()
 	init_end();
 	
 	osKernelStart();
-	tick = osKernelSysTick();
+	tick = osKernelSysTick()/120000;
 	
 	osDelay(osWaitForever);
 }

@@ -4,8 +4,9 @@
 #include <stdbool.h>
 #include "grlib/grlib.h"
 
-#define MSG3
+#define MSG4
 #define DEBUG
+//#define GANTT
 
 void init_flags();
 

@@ -23,6 +23,13 @@ void test_penultimate()
 		f_test_penultimate = false;
 		penultimate_word = getWord(msg + 33*4) - key;
 		
+		#ifdef GANTT
+				{
+					int i = 0;
+					for(i = 0 ; i < 50000; i++);
+				}
+		#endif
+		
 		if ((key / 2) == penultimate_word) {
 			passed_penultimate = true;
 		} else {

@@ -17,7 +17,7 @@ void end()
 {
 	char buffer[255];
 	while(1) {
-		if (passed_last && passed_penultimate) {
+		if (f_end) {
 			#ifndef DEBUG
 				GrContextBackgroundSet(&sContext, ClrBlack);
 				GrContextForegroundSet(&sContext, ClrWhite);
@@ -25,10 +25,10 @@ void end()
 				sprintf(buffer, "%u", key);
 				GrStringDraw(&sContext, buffer, -1, 0, (sContext.psFont->ui8Height+2)*5, true);
 				GrStringDraw(&sContext, "Execution time:", -1, 0, (sContext.psFont->ui8Height+2)*6, true);
-				sprintf(buffer, "%f s", ((float)osKernelSysTick() - tick) / osKernelSysTickFrequency);
+				sprintf(buffer, "%u ms", osKernelSysTick()/120000 - tick);
 				GrStringDraw(&sContext, buffer, -1, 0, (sContext.psFont->ui8Height+2)*7, true);
 			#endif
-				osDelay(osWaitForever);
+				while(1);
 		}
 		osThreadYield();
 	}

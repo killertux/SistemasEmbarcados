@@ -6,6 +6,8 @@
 #include "msg1.h"
 #include "msg2.h"
 #include "msg3.h"
+#include "msg4.h"
+#include "msg5.h"
 
 bool f_generate;
 bool f_prime;
@@ -40,10 +42,16 @@ void init_flags() {
 	#ifdef MSG1
 	msg = msg1_bin;
 	#endif
-	#ifdef MSG2
+	#ifdef	MSG2
 	msg = msg2_bin;
 	#endif
 	#ifdef MSG3
 	msg = msg3_bin;
+	#endif
+	#ifdef MSG4
+	msg = msg4_bin;
+	#endif
+	#ifdef MSG5
+	msg = msg5_bin;
 	#endif
 }

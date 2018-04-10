@@ -27,21 +27,25 @@ void show_result()
 			f_finished_test_penultimate = false;
 			
 			#ifndef DEBUG
+				//cfaf128x128x16Clear();
 				GrContextBackgroundSet(&sContext, ClrBlack);
 				GrContextForegroundSet(&sContext, ClrWhite);
 				GrStringDraw(&sContext, (char*)decoded_msg, 13, 0, (sContext.psFont->ui8Height+2)*1, true);
 				GrStringDraw(&sContext, (char*)decoded_msg + 13, 13, 0, (sContext.psFont->ui8Height+2)*2, true);
 				GrStringDraw(&sContext, (char*)decoded_msg + 26, 7, 0, (sContext.psFont->ui8Height+2)*3, true);
 
-			#else
+			#endif
+			#ifdef GANTT
 				{
 					int i = 0;
-					for(i = 0 ; i < 100000; i++);
+					for(i = 0 ; i < 10000; i++);
 				}
 			#endif
 			
 			if(!(passed_last && passed_penultimate))
 				f_generate = true;
+			else
+				f_end = true;
 			
 			osThreadYield();
 		}

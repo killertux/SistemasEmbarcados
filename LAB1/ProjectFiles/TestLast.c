@@ -23,7 +23,13 @@ void test_last ()
 		}
 		f_test_last = false;
 		last_word = getWord(msg + 34*4) + key ;
-
+		
+		#ifdef GANTT
+				{
+					int i = 0;
+					for(i = 0 ; i < 50000; i++);
+				}
+		#endif
 		
 		if (((key * key) / last_key) == last_word) {
 			passed_last = true;

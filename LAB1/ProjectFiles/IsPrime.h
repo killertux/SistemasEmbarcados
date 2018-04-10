@@ -2,6 +2,7 @@
 #define IS_PRIME_H
 
 void is_prime();
+
 int init_isPrime();
 
 #endif

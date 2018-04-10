@@ -2,6 +2,7 @@
 #define DECODE_H
 
 int init_decode();
+
 void decode();
 
 #endif

@@ -19,4 +19,8 @@ void horizon_draw(Display *display, int move) {
 				d_x = x + position;
 				display->back_buffer[(d_x > 0)? (x + position)%128 : 128 + d_x][y] = (!horizon_bin[y*128+x])?skyColor:mountainColor;
 		 }
+	//Draw the grass
+	for(x = 0; x < 128; x++)
+		 for(y =32; y < 96; y++)
+		 display->back_buffer[x][y] = 0x014400;
 }

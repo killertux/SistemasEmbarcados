@@ -16,6 +16,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+
 /*----------------------------------------------------------------------------
  * include libraries from drivers
  *----------------------------------------------------------------------------*/
@@ -26,6 +27,7 @@
 
 #include "horizon.h"
 #include "Car.h"
+#include "Road.h"
 
 #define COLOR_THRESHOLD 100
 
@@ -47,9 +49,11 @@ void init_all(){
 int main (void) {
 	int x, h_move;
 	Car my_car, enemy_car;
+	Road road;
 	
 	init_all();
 
+	road_init(&road);
 	car_init(&my_car);
 	car_init(&enemy_car);
 	my_car.x = 58;
@@ -64,18 +68,19 @@ int main (void) {
 			if(x > 3000) {
 				h_move = 1;
 				if(my_car.x < 128-23)
-					my_car.x++;
+					my_car.x+=2;
 			} else if (x < 1000) {
 				h_move = -1;
 				if(my_car.x > 0)
-					my_car.x--;
+					my_car.x-=2;
 			}
 			if(enemy_car.y < 47)
 				enemy_car.y++;
 			else 
 				enemy_car.y = 0;
-			
+			road.state = 1;
 			horizon_draw(&display, h_move);
+			road_draw(&display, &road, h_move);
 			car_draw(&display, &enemy_car);
 			car_draw(&display, &my_car);
 			display_update(&display);

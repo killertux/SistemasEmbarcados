@@ -26,29 +26,34 @@ void road_draw(Display *display, Road *road, int move) {
 		}
 	}
 	// Drawing a right curved road
-	/* else if (road->state == 1) {
-		 float angle, step;
-		 int iterator = 0;
-		 float end_x=24, end_y=32;
-		 angle = atan((96-32)/(64-24));
-		 //line 1
-		 x = 24;
-		 y = 96;
-		 while(angle < 6.28) {
-			 x += cos(angle);
-			 y -= sin(angle);
-			 iterator++;
-				 angle += 0.05;
-			 display->back_buffer[(int)x][(int)y] = road->color;
-		 }
-		 //line2
-		/* 
-		for (x = 0; x < ROAD_HEIGHT; x++) {
-			float x_coordinate = (ROAD_WIDTH - x);
-			x_coordinate *= x_coordinate;
-			
-			display->back_buffer[(int)x_coordinate][(int)x] = road->color;
+	else if (road->state == 1) {
+	  float angle, step;
+	  int iterator = 0;
+	  float end_x=24, end_y=32;
+		angle = atan((96-32)/(64-24));
+		//line 1
+		x = 24;
+		y = 96;
+		while(angle < 6.28) {
+		  x += cos(angle);
+		  y -= sin(angle);
+		  iterator++;
+			angle += 0.05;
+			display->back_buffer[(int)x][(int)y] = road->color;
+		}
+		//line2
+		 
+	  /*angle = atan((96-32)/(64-24)) + 90;
+		x = 64;
+		y = 96;
+		while(angle < 6.28) {
+		  x += cos(angle);
+		  y -= sin(angle);
+		  iterator++;
+			angle += 0.05;
+			display->back_buffer[(int)x][(int)y] = road->color;
 		}*/
+	}
   // Drawing a left curved road
 	/*} else if (road->state == -1) {
 		for (x = 0; x < ROAD_WIDTH; x++) {

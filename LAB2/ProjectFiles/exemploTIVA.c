@@ -48,6 +48,7 @@ void init_all(){
  *---------------------------------------------------------------------------*/
 int main (void) {
 	int x, h_move;
+	int s1_press, s2_press;
 	Car my_car, enemy_car;
 	Road road;
 	
@@ -78,10 +79,18 @@ int main (void) {
 				enemy_car.y++;
 			else 
 				enemy_car.y = 0;
-			road.state = 1;
+			s1_press = button_read_s1();
+			s2_press = button_read_s2();
+			if(s1_press)
+				road.state = -1;
+			if(s2_press)
+				road.state = 1;
+			if(!s2_press && !s1_press)
+				road.state = 0;
+			
 			horizon_draw(&display, h_move);
 			road_draw(&display, &road, h_move);
-			car_draw(&display, &enemy_car);
+			enemy_car_draw(&display, &enemy_car, road.displacement, road.end_x, 32);
 			car_draw(&display, &my_car);
 			display_update(&display);
 	}

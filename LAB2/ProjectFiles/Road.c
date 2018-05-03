@@ -1,5 +1,6 @@
 #include "road.h"
 #include <math.h>
+#include "Bezier.h"
 
 void road_init(Road *road) {
 	road->left_starting_point = 32;
@@ -7,6 +8,7 @@ void road_init(Road *road) {
 	road->color = 0xFFFFFF;
 	road->frame = 1;
 	road->displacement = 0;
+	road->end_x = ROAD_STRAIGHT_END_X;
 }
 
 void road_draw(Display *display, Road *road, int move) {
@@ -16,51 +18,39 @@ void road_draw(Display *display, Road *road, int move) {
 	float x, y;
 	road->displacement += move;
 	
-	// Drawing a straight road
 	if (road->state == 0) {
-		for (x = starting_point; x < ROAD_WIDTH + ROAD_STARTING_POINT; x++) {
-			if(x < 64)
-				display->back_buffer[(int)x + road->displacement][(int)(134.4 - x*1.6)] = road->color;
-			else
-				display->back_buffer[(int)x + road->displacement][(int)(-70.4 + x*1.6)] = road->color;
-		}
+		if (road->end_x < ROAD_STRAIGHT_END_X)
+			road->end_x+=2;
+		else if (road->end_x > ROAD_STRAIGHT_END_X)
+			road->end_x-=2;
+	} else if (road->state == 1) {
+		if (road->end_x < ROAD_RIGHT_END_X)
+			road->end_x+=2;
+	} else if (road->state == -1) {
+		if (road->end_x > ROAD_LEFT_END_X)
+			road->end_x-=2;
 	}
-	// Drawing a right curved road
-	else if (road->state == 1) {
-	  float angle, step;
-	  int iterator = 0;
-	  float end_x=24, end_y=32;
-		angle = atan((96-32)/(64-24));
-		//line 1
-		x = 24;
-		y = 96;
-		while(angle < 6.28) {
-		  x += cos(angle);
-		  y -= sin(angle);
-		  iterator++;
-			angle += 0.05;
-			display->back_buffer[(int)x][(int)y] = road->color;
-		}
-		//line2
-		 
-	  /*angle = atan((96-32)/(64-24)) + 90;
-		x = 64;
-		y = 96;
-		while(angle < 6.28) {
-		  x += cos(angle);
-		  y -= sin(angle);
-		  iterator++;
-			angle += 0.05;
-			display->back_buffer[(int)x][(int)y] = road->color;
-		}*/
-	}
-  // Drawing a left curved road
-	/*} else if (road->state == -1) {
-		for (x = 0; x < ROAD_WIDTH; x++) {
-		   int x_coordinate = (ROAD_WIDTH - x);
-		 	 x_coordinate *= x_coordinate;
-			 
-			 display->back_buffer[- x_coordinate][x] = (!frame[y*ROAD_WIDTH + x]) ? display->back_buffer[x][y] : road->color;
-		}
-	}*/
+	
+	draw_bezier_curve(
+		display,
+		road->displacement,
+		road->color,
+		ROAD_LEFT_LINE_START_X,
+		ROAD_LEFT_LINE_START_Y,
+		ROAD_LEFT_LINE_BEZIER_X,
+		ROAD_LEFT_LINE_BEZIER_Y,
+		road->end_x,
+		ROAD_END_Y
+	);
+	draw_bezier_curve(
+		display,
+		road->displacement,
+		road->color,
+		ROAD_RIGHT_LINE_START_X,
+		ROAD_RIGHT_LINE_START_Y,
+		ROAD_RIGHT_LINE_BEZIER_X,
+		ROAD_RIGHT_LINE_BEZIER_Y,
+		road->end_x,
+		ROAD_END_Y
+	);
 }

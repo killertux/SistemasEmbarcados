@@ -1,8 +1,12 @@
 #ifndef TRACK_MANAGER_H
 #define TRACK_MANAGER_H
 
-int init_track_manager();
+#include "Information.h"
 
-void track_manager();
+extern osThreadId tid_trackmanager;  
+
+int init_track_manager(Information *info);
+
+void track_manager(Information *info);
 
 #endif

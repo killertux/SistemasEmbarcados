@@ -1,8 +1,12 @@
 #ifndef INTERACTION_H
 #define INTERACTION_H
 
-void interaction();
+#include "Information.h"
 
-int init_interaction();
+extern osThreadId tid_interaction; 
+
+void interaction(Information *info);
+
+int init_interaction(Information *info);
 
 #endif

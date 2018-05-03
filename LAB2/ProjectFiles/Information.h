@@ -1,5 +1,5 @@
-#ifndef INTERACTION_H
-#define INTERACTION_H
+#ifndef INFORMATION_H
+#define INFORMATION_H
 
 #include <stdint.h>
 #include "Display.h"
@@ -11,9 +11,11 @@ typedef struct {
 	Car* enemy_car;
 	int enemy_car_count;
 	int x_joystick;
-	boolean acceleration;
-	boolean start;
+	bool acceleration;
+	bool start;
 	Display* display;
 } Information;
+
+void information_init(Information *info, Display *display, Car *car);
 
 #endif

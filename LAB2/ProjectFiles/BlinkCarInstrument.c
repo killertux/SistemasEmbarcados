@@ -1,6 +1,8 @@
 #include "cmsis_os.h"                                           
 #include "BlinkCarInstrument.h"
 
+void Timer2_Callback (void const *arg){}
+
 void Init_Timers (void) {
   osStatus status;                                // function return 
                                                   //  status
@@ -18,7 +20,7 @@ void Init_Timers (void) {
 	}*/
  
   // Create periodic timer
-  exec2 = 2;
+  /*exec2 = 2;
   id2 = osTimerCreate (osTimer(Timer2), osTimerPeriodic, &exec2);
   if (id2 != NULL) {    // Periodic timer created
     // start timer with periodic 1000ms interval
@@ -26,5 +28,5 @@ void Init_Timers (void) {
     if (status != osOK) {
       // Timer could not be started
     }
-  }
+  }*/
 }

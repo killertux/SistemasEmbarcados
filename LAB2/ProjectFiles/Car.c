@@ -13,7 +13,7 @@ void car_init(Car *car) {
 }
 
 void car_draw(Display *display, Car *car) {
-	int x,y, d_x, d_y;
+	int x, y, d_x, d_y;
 	int *frame;
 	if(car->frame == 1) {
 		frame = (int*)&car_frame1;
@@ -25,7 +25,7 @@ void car_draw(Display *display, Car *car) {
 	
 	for(x = 0; x < CAR_WIDTH; x++)
 		for(y = 0; y < CAR_HEIGHT; y++) {
-			d_x = x * ((float)CAR_WIDTH  - ((float)CAR_WIDTH/47*car->y)) /CAR_WIDTH  + car->x - (((float)CAR_WIDTH  - ((float)CAR_WIDTH/47*car->y)) / 2);
+			d_x = x * ((float)CAR_WIDTH  - ((float)CAR_WIDTH/47*(car->y+10))) /CAR_WIDTH  + car->x - (((float)CAR_WIDTH  - ((float)CAR_WIDTH/47*(car->y+10))) / 2);
 			d_y = y * ((float)CAR_HEIGHT - ((float)CAR_HEIGHT/47*car->y))/CAR_HEIGHT - car->y + CAR_DEFAULT_Y;
 			
 			display->back_buffer[d_x][d_y] = (!frame[y*CAR_WIDTH + x]) ? display->back_buffer[d_x][d_y] : car->color;
@@ -38,7 +38,7 @@ void enemy_car_draw(Display *display, Car *car, float displacement, float road_e
 	temp_car.y = car->y;
 	temp_car.color = car->color;
 	temp_car.frame = car->frame;
-	draw_bezier_curve(display, displacement, 0x00, temp_car.x, 96, temp_car.x, 64, road_end_x, road_end_y);
 	temp_car.x = bezier_curve_car(displacement, temp_car.x, 96, temp_car.x, 64, road_end_x, road_end_y, CAR_DEFAULT_Y - temp_car.y);
 	car_draw(display, &temp_car);
 }
+

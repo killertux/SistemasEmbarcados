@@ -1,8 +1,9 @@
 #ifndef END_CONDITION_H
 #define END_CONDITION_H
 
-void end_condition();
+#include "Information.h"
+void end_condition(Information *info);
 
-int init_end_condition();
+osThreadId init_end_condition(Information *info);
 
 #endif

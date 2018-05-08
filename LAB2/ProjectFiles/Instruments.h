@@ -1,7 +1,9 @@
-#ifndef INTERACTION_H
-#define INTERACTION_H
+#ifndef INSTRUMENTS_H
+#define INSTRUMENTS_H
 
-void instruments();
-int init_instruments();
+#include "Information.h"
+
+void instruments(Information *info);
+osThreadId init_instruments(Information *info);
 
 #endif

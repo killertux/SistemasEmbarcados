@@ -386,11 +386,6 @@
               <FilePath>.\exemploTIVA.c</FilePath>
             </File>
             <File>
-              <FileName>airplane.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\airplane.h</FilePath>
-            </File>
-            <File>
               <FileName>Display.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Display.h</FilePath>
@@ -416,14 +411,14 @@
               <FilePath>.\Car.h</FilePath>
             </File>
             <File>
-              <FileName>Car.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Car.c</FilePath>
-            </File>
-            <File>
               <FileName>road.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\road.c</FilePath>
+            </File>
+            <File>
+              <FileName>Car.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Car.c</FilePath>
             </File>
             <File>
               <FileName>road.h</FileName>
@@ -441,14 +436,14 @@
               <FilePath>.\Bezier.c</FilePath>
             </File>
             <File>
-              <FileName>Interaction.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Interaction.c</FilePath>
-            </File>
-            <File>
               <FileName>Interaction.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Interaction.h</FilePath>
+            </File>
+            <File>
+              <FileName>Interaction.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Interaction.c</FilePath>
             </File>
             <File>
               <FileName>TrackManager.c</FileName>
@@ -519,6 +514,16 @@
               <FileName>Information.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Information.c</FilePath>
+            </File>
+            <File>
+              <FileName>panel.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\panel.c</FilePath>
+            </File>
+            <File>
+              <FileName>panel.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\panel.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -958,11 +963,6 @@
               <FilePath>.\exemploTIVA.c</FilePath>
             </File>
             <File>
-              <FileName>airplane.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\airplane.h</FilePath>
-            </File>
-            <File>
               <FileName>Display.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Display.h</FilePath>
@@ -988,14 +988,14 @@
               <FilePath>.\Car.h</FilePath>
             </File>
             <File>
-              <FileName>Car.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Car.c</FilePath>
-            </File>
-            <File>
               <FileName>road.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\road.c</FilePath>
+            </File>
+            <File>
+              <FileName>Car.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Car.c</FilePath>
             </File>
             <File>
               <FileName>road.h</FileName>
@@ -1013,14 +1013,14 @@
               <FilePath>.\Bezier.c</FilePath>
             </File>
             <File>
-              <FileName>Interaction.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Interaction.c</FilePath>
-            </File>
-            <File>
               <FileName>Interaction.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Interaction.h</FilePath>
+            </File>
+            <File>
+              <FileName>Interaction.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Interaction.c</FilePath>
             </File>
             <File>
               <FileName>TrackManager.c</FileName>
@@ -1091,6 +1091,16 @@
               <FileName>Information.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Information.c</FilePath>
+            </File>
+            <File>
+              <FileName>panel.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\panel.c</FilePath>
+            </File>
+            <File>
+              <FileName>panel.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\panel.h</FilePath>
             </File>
           </Files>
         </Group>

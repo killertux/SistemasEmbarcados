@@ -5,6 +5,7 @@ void display_init(Display *display) {
 	int x,y;
 	cfaf128x128x16Init();
 	GrContextInit(&display->sContext, &g_sCfaf128x128x16);
+	GrContextFontSet(&display->sContext, g_psFontFixed6x8);
 	GrFlush(&display->sContext);
 	for(x = 0; x < 128; x++)
 		for(y = 0; y < 128; y++){

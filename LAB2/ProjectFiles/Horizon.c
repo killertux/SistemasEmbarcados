@@ -5,9 +5,7 @@ const int horizon_bin[]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
 
 int position = 0;
 	
-void horizon_draw(Display *display, int move) {
-	uint32_t mountainColor = 0x84881a;
-	uint32_t skyColor = 0x1110aa;
+void horizon_draw(Display *display, int move, uint32_t mountainColor, uint32_t skyColor, uint32_t grassColor) {
 	int x,y, d_x;
 	position += move;
 	if(position >= 128)
@@ -22,5 +20,5 @@ void horizon_draw(Display *display, int move) {
 	//Draw the grass
 	for(x = 0; x < 128; x++)
 		 for(y =32; y < 96; y++)
-		 display->back_buffer[x][y] = 0x014400;
+		 display->back_buffer[x][y] = grassColor;
 }

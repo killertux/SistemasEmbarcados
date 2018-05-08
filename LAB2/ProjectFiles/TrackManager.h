@@ -3,9 +3,7 @@
 
 #include "Information.h"
 
-extern osThreadId tid_trackmanager;  
-
-int init_track_manager(Information *info);
+osThreadId init_track_manager(Information *info);
 
 void track_manager(Information *info);
 

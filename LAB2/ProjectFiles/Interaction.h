@@ -2,11 +2,10 @@
 #define INTERACTION_H
 
 #include "Information.h"
-
-extern osThreadId tid_interaction; 
+#include "cmsis_os.h"
 
 void interaction(Information *info);
 
-int init_interaction(Information *info);
+osThreadId init_interaction(Information *info);
 
 #endif

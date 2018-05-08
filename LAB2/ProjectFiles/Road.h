@@ -32,9 +32,11 @@ typedef struct {
 	int frame;
 	int displacement;
 	float end_x;
+	int horizontal_movement;
 } Road;
 
 void road_init(Road *road);
 void road_draw(Display *display, Road *road, int move);
+void road_move(Road *road, int movement);
 
 #endif

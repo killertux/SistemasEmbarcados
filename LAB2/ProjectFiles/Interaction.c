@@ -34,17 +34,19 @@ void interaction(Information *info) {
 		if (evt.status != osEventSignal)
 			continue;
 		
-		osMutexWait(info_mutex, osWaitForever);
-		info->road->horizontal_movement = 0;	
+		osMutexWait(info_mutex, osWaitForever);	
 		x_joystick = joy_read_x();
 		info->accel_pressed = button_read_s1();
+		info->move_horizon = 0;
 		
 		info->move_left = info->move_right = false;
 		if(x_joystick > 3000 && info->player_car->x < 128-30) {
-				info->road->horizontal_movement = 1;
-				info->move_right = true;
+			info->road->displacement = (info->player_car->x - 64) /4 ;
+			info->move_horizon = 1;
+			info->move_right = true;
 		} else if (x_joystick < 1000 && info->player_car->x > 35) {
-				info->road->horizontal_movement = -1;
+				info->road->displacement = (info->player_car->x - 64) /4 ;
+				info->move_horizon = -1;
 				info->move_left = true;
 		}					
 

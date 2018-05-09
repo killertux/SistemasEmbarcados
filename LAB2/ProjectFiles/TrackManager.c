@@ -25,12 +25,15 @@ void track_manager(Information *info) {
 			continue;
 		
 		osMutexWait(info_mutex, osWaitForever);
-		if(curve_counter > 4500 || (curve_counter < 3000 && curve_counter > 2000))
+		if(curve_counter > 4500 || (curve_counter < 3000 && curve_counter > 2000)) {
 			info->road->state = 0;
-		if(curve_counter <= 4000 && curve_counter > 3000)
+		} if(curve_counter <= 4000 && curve_counter > 3000) {
 			info->road->state = 1;
-		if(curve_counter < 2000)
+			info->move_horizon++;
+		} if(curve_counter < 2000) {
 			info->road->state = -1;
+			info->move_horizon--;
+		}
 		curve_counter-=5;
 		if (curve_counter <= 0) {
 			curve_counter = 5000;
@@ -53,14 +56,14 @@ void track_manager(Information *info) {
 			grass_color = 0x070707;
 		}
 		
-		if(info->biome_changer > 6500) {
+		if(info->biome_changer > 7500) {
 			info->biome_changer = 0;
 			info->current_biome++;
 		}
 		
 		info->road->color = road_color;
-		horizon_draw(info->display, info->road->horizontal_movement, mountain_color, sky_color, grass_color);
-		road_draw(info->display, info->road, info->road->horizontal_movement);
+		horizon_draw(info->display, info->move_horizon, mountain_color, sky_color, grass_color);
+		road_draw(info->display, info->road);
 		osMutexRelease (info_mutex);
 	
 		osSignalSet(info->tid_player_vehicle, 0x01);

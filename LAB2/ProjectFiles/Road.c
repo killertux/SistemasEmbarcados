@@ -11,12 +11,11 @@ void road_init(Road *road) {
 	road->end_x = ROAD_STRAIGHT_END_X;
 }
 
-void road_draw(Display *display, Road *road, int move) {
+void road_draw(Display *display, Road *road) {
 	int *frame;
 	int starting_point = ROAD_STARTING_POINT;
 	int end_point = starting_point + ROAD_WIDTH;
 	float x, y;
-	road->displacement += move;
 	
 	if (road->state == 0) {
 		if (road->end_x < ROAD_STRAIGHT_END_X)

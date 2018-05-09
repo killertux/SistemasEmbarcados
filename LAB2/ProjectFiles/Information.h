@@ -40,6 +40,7 @@ typedef struct {
 	bool move_right;
 	bool start;
 	bool accel_pressed;
+	int move_horizon;
 	
 	//Thread ids
 	osThreadId tid_adversaries;

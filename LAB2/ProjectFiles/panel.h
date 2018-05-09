@@ -5,6 +5,6 @@
 #include <stdio.h>
 #include "Display.h"
 
-void panel_draw(Display *display, int meter, int score);
+void panel_draw(Display *display, int meter, int score, int panel_car_color, int day);
 
 #endif

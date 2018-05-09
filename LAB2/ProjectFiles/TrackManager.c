@@ -56,7 +56,7 @@ void track_manager(Information *info) {
 			grass_color = 0x070707;
 		}
 		
-		if(info->biome_changer > 7500) {
+		if(info->biome_changer > 2750) {
 			info->biome_changer = 0;
 			info->current_biome++;
 		}

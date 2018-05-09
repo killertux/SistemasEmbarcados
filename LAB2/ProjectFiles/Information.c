@@ -35,4 +35,8 @@ void information_init(Information *info, Display *display, Car *car, Road* road)
 	info->biome_cycle[4] = DAY;
 	info->current_biome = 0;
 	info->score = 200;
+	info->panel_car_color = 0x000000;
+	info->timer_running = false;
+	info->timer_counter = 0;
+	info->last_lap = false;
 }

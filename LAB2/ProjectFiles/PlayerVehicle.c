@@ -22,11 +22,11 @@ void player_vehicle(Information *info) {
 		
 		osMutexWait(info_mutex, osWaitForever);
 		info->collision_counter--;
-		if (info->accel_pressed && info->collision_counter <= 0) {
+		if (info->accel_pressed && info->collision_counter <= 0 && info->speed_ticks < 40) {
 				info->speed_ticks += info->enemy_car_count;
 		}
-		info->kilometers += (!info->speed_ticks)? 0.05 : info->speed_ticks/80;
-		info->biome_changer += (!info->speed_ticks)? 0.05 : info->speed_ticks/80;
+		info->kilometers += (!info->speed_ticks)? 0.05 : 0.05 + info->speed_ticks / 20;
+		info->biome_changer += (!info->speed_ticks)? 0.05 :0.05 + info->speed_ticks / 20;
 		turn_step = (info->biome_cycle[info->current_biome] == SNOW)? 2 : 4;
 		if(info->move_right)
 			info->player_car->x+=turn_step;

@@ -4,7 +4,6 @@
 #include "Information.h"
 #include <stdlib.h>   
 #include <math.h>
-#include "buzzer.h"
 
 osThreadDef (adversaries, osPriorityNormal, 1, 0);
 

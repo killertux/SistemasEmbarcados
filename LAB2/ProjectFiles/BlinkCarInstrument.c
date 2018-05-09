@@ -1,32 +1,30 @@
 #include "cmsis_os.h"                                           
 #include "BlinkCarInstrument.h"
+	
+static osTimerId id;
 
-void Timer2_Callback (void const *arg){}
+static Information *s_info;
 
-void Init_Timers (void) {
-  osStatus status;                                // function return 
-                                                  //  status
- 
-	/*
-  // Create one-shoot timer
-  exec1 = 1;
-  id1 = osTimerCreate (osTimer(Timer1), osTimerOnce, &exec1);
-  if (id1 != NULL) {    // One-shot timer created
-    // start timer with delay 100ms
-    status = osTimerStart (id1, 100);            
-    if (status != osOK) {
-      // Timer could not be started
-    }
-	}*/
- 
-  // Create periodic timer
-  /*exec2 = 2;
-  id2 = osTimerCreate (osTimer(Timer2), osTimerPeriodic, &exec2);
-  if (id2 != NULL) {    // Periodic timer created
-    // start timer with periodic 1000ms interval
-    status = osTimerStart (id2, 1000);            
-    if (status != osOK) {
-      // Timer could not be started
-    }
-  }*/
+static void Timer_Callback (const void *arg) {
+	if( s_info->panel_car_color == 0x000000)
+		s_info->panel_car_color = 0xffffff;
+	else
+		s_info->panel_car_color = 0x000000;
+	s_info->timer_counter++;
+}	
+
+static osTimerDef (Timer, Timer_Callback);
+
+void create_timer (Information *info) {
+	osStatus status;
+	s_info = info;
+  id = osTimerCreate (osTimer(Timer), osTimerPeriodic, NULL);
+}
+
+void start_timer() {
+	osTimerStart (id, 1000);   
+}
+
+void stop_timer() {
+	osTimerStop(id);
 }

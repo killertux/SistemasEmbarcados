@@ -3,6 +3,7 @@
 #include "TrackManager.h"
 #include "joy.h"
 #include "buttons.h"
+#include "buzzer.h"
 
 #include "horizon.h"
 #include "Car.h"
@@ -28,6 +29,8 @@ void interaction(Information *info) {
 	int s1_press, s2_press;
 	Car *player_car = info->player_car;
 	int joystick_timer = 5, counter = 5, curve_counter = 5000;
+	uint16_t min_buzzer = 9000;
+  uint16_t buzzer_colision = 10000;
 
 	while(1) {
 		evt = osSignalWait(0x01, osWaitForever);
@@ -48,7 +51,14 @@ void interaction(Information *info) {
 				info->road->displacement = (info->player_car->x - 64) /4 ;
 				info->move_horizon = -1;
 				info->move_left = true;
-		}					
+		}
+
+			if (info->collision_counter <= 0 && info->speed_ticks <= 40) {
+        buzzer_per_set(min_buzzer - info->speed_ticks * 50);
+      } else if (info->collision_counter > 0)
+        buzzer_per_set(buzzer_colision);
+			else if (info->collision_counter <=0)
+				buzzer_per_set(min_buzzer);
 
 		display_update(info->display);
 		display_clear_back_buffer(info->display);

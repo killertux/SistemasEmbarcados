@@ -20,7 +20,7 @@ void instruments(Information *info) {
 		if (evt.status != osEventSignal)
 			continue;
 		osMutexWait(info_mutex, osWaitForever);
-		panel_draw(info->display, (int)info->kilometers, info->score);
+		panel_draw(info->display, (int)info->kilometers, info->score, info->panel_car_color, (info->last_lap)?2 : 1);
 		osMutexRelease(info_mutex);
 		osSignalSet(info->tid_end_condition, 0x01);
 	}

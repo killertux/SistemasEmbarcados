@@ -525,6 +525,11 @@
               <FileType>5</FileType>
               <FilePath>.\panel.h</FilePath>
             </File>
+            <File>
+              <FileName>buzzer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\buzzer.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1101,6 +1106,11 @@
               <FileName>panel.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\panel.h</FilePath>
+            </File>
+            <File>
+              <FileName>buzzer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\buzzer.c</FilePath>
             </File>
           </Files>
         </Group>

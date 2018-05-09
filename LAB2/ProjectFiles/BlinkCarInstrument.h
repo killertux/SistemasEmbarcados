@@ -1,13 +1,10 @@
 #ifndef BLINK_CAR_INSTRUMENT_H
 #define BLINK_CAR_INSTRUMENT_H
 
-
-static void Timer2_Callback (void const *arg);    // prototype for timer 
-                                                  //  callback function
-static osTimerId id2;                             // timer id
-static uint32_t  exec2;                           // argument for the 
-                                                  //  timer call back 
-                                                  //  function
-static osTimerDef (Timer2, Timer2_Callback);
-
+#include "Information.h"
+void Timer_Callback (const void *arg);
+void create_timer (Information *info);
+void start_timer();
+void stop_timer();
+int getOla();
 #endif

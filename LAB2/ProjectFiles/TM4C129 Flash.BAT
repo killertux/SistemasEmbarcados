@@ -18,6 +18,7 @@ SET CPU_CLOCK=0x07270E00
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\blinkcarinstrument.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\information.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\panel.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\buzzer.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\buttons.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\cfaf128x128x16.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\flash\joy.__i"

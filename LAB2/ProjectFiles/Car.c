@@ -38,6 +38,7 @@ void enemy_car_draw(Display *display, Car *car, float displacement, float road_e
 	temp_car.y = car->y;
 	temp_car.color = car->color;
 	temp_car.frame = car->frame;
+	car->frame = !car->frame;
 	temp_car.x = bezier_curve_car(displacement, temp_car.x, 96, temp_car.x, 64, road_end_x, road_end_y, CAR_DEFAULT_Y - temp_car.y);
 	car_draw(display, &temp_car);
 }

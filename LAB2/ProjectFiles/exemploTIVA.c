@@ -15,7 +15,7 @@
 #include "TM4C129.h"                    // Device header
 #include <stdbool.h>
 #include <stdio.h>
-
+#include "buzzer.h"
 
 /*----------------------------------------------------------------------------
  * include libraries from drivers
@@ -36,6 +36,7 @@
 #include "PlayerVehicle.h"
 #include "Instruments.h"
 #include "EndCondition.h"
+#include "BlinkCarInstrument.h"
 #include "panel.h"
 
 #define COLOR_THRESHOLD 100
@@ -50,6 +51,7 @@ void init_all(){
 	display_init(&display);
 	joy_init(); 
 	button_init();
+	buzzer_init();
 }
 
 /*----------------------------------------------------------------------------
@@ -61,13 +63,16 @@ int main (void) {
 	Car my_car, enemy_car;
 	Road road;
 	Information info;
-
+	
+	create_timer(&info);
 	init_all();
+	
+	buzzer_write(true);
 
 	car_init(&my_car);
 	display_init(&display);
 	road_init(&road);
-	my_car.x = 58;
+	my_car.x = 59;
 	my_car.color = 0xb6b6b6;
 
 	information_init(&info, &display, &my_car, &road);
@@ -79,7 +84,7 @@ int main (void) {
 	info.tid_adversaries = init_adversaries(&info);
 	info.tid_instruments = init_instruments(&info);
 	info.tid_end_condition = init_end_condition(&info);
-		
+
 	osSignalSet(info.tid_interaction, 0x01);
 	osDelay(osWaitForever);
 	return 0;

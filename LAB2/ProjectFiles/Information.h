@@ -23,6 +23,7 @@ typedef struct {
 	Car* player_car;
 	Car enemy_car[3];
 	int enemy_car_count;
+	int panel_car_color;
 	
 	//Speed and distance
 	int actual_speed_tick;
@@ -41,6 +42,11 @@ typedef struct {
 	bool start;
 	bool accel_pressed;
 	int move_horizon;
+	
+	//misc
+	bool timer_running;
+	int timer_counter;
+	bool last_lap;
 	
 	//Thread ids
 	osThreadId tid_adversaries;

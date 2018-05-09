@@ -41,6 +41,7 @@ typedef struct {
 	bool move_right;
 	bool start;
 	bool accel_pressed;
+	bool lost;
 	int move_horizon;
 	
 	//misc

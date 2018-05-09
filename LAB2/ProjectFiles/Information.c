@@ -39,4 +39,5 @@ void information_init(Information *info, Display *display, Car *car, Road* road)
 	info->timer_running = false;
 	info->timer_counter = 0;
 	info->last_lap = false;
+	info->lost = false;
 }

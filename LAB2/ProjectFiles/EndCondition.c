@@ -1,6 +1,7 @@
 #include "cmsis_os.h"
 #include "BlinkCarInstrument.h"
 #include "EndCondition.h"
+#include "buzzer.h"
 
 osThreadDef (end_condition, osPriorityNormal, 1, 0);
 
@@ -25,8 +26,8 @@ void end_condition(Information *info) {
 			start_timer();
 		} 
 		
-		if( info->timer_counter >= 20 || (info->score == 0 && info->last_lap) )
-			for(;;);
+		if( info->timer_counter >= 20 || (info->score == 0 && info->last_lap) ) 
+			info->lost = true;
 		else if(info->score == 0)
 			reset_conditions(info);
 		osMutexRelease(info_mutex);

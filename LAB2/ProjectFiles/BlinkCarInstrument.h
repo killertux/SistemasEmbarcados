@@ -6,5 +6,5 @@ void Timer_Callback (const void *arg);
 void create_timer (Information *info);
 void start_timer();
 void stop_timer();
-int getOla();
+void timer();
 #endif

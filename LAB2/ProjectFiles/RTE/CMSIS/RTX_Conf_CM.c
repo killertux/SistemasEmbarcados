@@ -48,7 +48,7 @@
 //   <i> Defines max. number of threads that will run at the same time.
 //   <i> Default: 6
 #ifndef OS_TASKCNT
- #define OS_TASKCNT 8
+ #define OS_TASKCNT 10
 #endif
 
 //   <o>Default Thread stack size [bytes] <64-4096:8><#/4>
@@ -83,7 +83,7 @@
 // <i> Includes the stack checking code for stack overflow.
 // <i> Note that additional code reduces the Kernel performance.
 #ifndef OS_STKCHECK
- #define OS_STKCHECK    1
+ #define OS_STKCHECK    0
 #endif
 
 // <o>Processor mode for thread execution 

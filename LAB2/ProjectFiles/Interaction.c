@@ -42,6 +42,11 @@ void interaction(Information *info) {
 		info->accel_pressed = button_read_s1();
 		info->move_horizon = 0;
 		
+		if(info->lost) {
+			 buzzer_per_set(500);
+				for(;;);
+		}
+		
 		info->move_left = info->move_right = false;
 		if(x_joystick > 3000 && info->player_car->x < 128-30) {
 			info->road->displacement = (info->player_car->x - 64) /4 ;

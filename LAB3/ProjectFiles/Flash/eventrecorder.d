@@ -1,0 +1,13 @@
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\PACK\Keil\ARM_Compiler\1.3.3\Source\EventRecorder.c
+.\flash\eventrecorder.o: .\RTE\_TM4C129_Flash\RTE_Components.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include\core_cm4.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include\cmsis_version.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include\cmsis_compiler.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include\cmsis_armcc.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\flash\eventrecorder.o: C:\Keil_v5\ARM\PACK\Keil\ARM_Compiler\1.3.3\Include\EventRecorder.h
+.\flash\eventrecorder.o: .\RTE\Compiler\EventRecorderConf.h

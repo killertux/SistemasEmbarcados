@@ -1,0 +1,12 @@
+.\ram\speaker.o: speaker.c
+.\ram\speaker.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\ram\speaker.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ram\speaker.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ram\speaker.o: ..\inc/hw_memmap.h
+.\ram\speaker.o: ..\driverlib/adc.h
+.\ram\speaker.o: ..\driverlib/gpio.h
+.\ram\speaker.o: ..\driverlib/pin_map.h
+.\ram\speaker.o: ..\driverlib/sysctl.h
+.\ram\speaker.o: ..\driverlib/uart.h
+.\ram\speaker.o: ..\grlib/grlib.h
+.\ram\speaker.o: speaker.h

@@ -1,0 +1,14 @@
+.\flash\cfaf128x128x16.o: cfaf128x128x16.c
+.\flash\cfaf128x128x16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\flash\cfaf128x128x16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\flash\cfaf128x128x16.o: ..\inc/hw_memmap.h
+.\flash\cfaf128x128x16.o: ..\inc/hw_ssi.h
+.\flash\cfaf128x128x16.o: ..\inc/hw_types.h
+.\flash\cfaf128x128x16.o: ..\inc/hw_sysctl.h
+.\flash\cfaf128x128x16.o: ..\driverlib/gpio.h
+.\flash\cfaf128x128x16.o: ..\driverlib/ssi.h
+.\flash\cfaf128x128x16.o: ..\driverlib/sysctl.h
+.\flash\cfaf128x128x16.o: ..\driverlib/rom.h
+.\flash\cfaf128x128x16.o: ..\driverlib/pin_map.h
+.\flash\cfaf128x128x16.o: ..\grlib/grlib.h
+.\flash\cfaf128x128x16.o: cfaf128x128x16.h

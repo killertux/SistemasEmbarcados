@@ -1,0 +1,12 @@
+.\ram\accel.o: accel.c
+.\ram\accel.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\ram\accel.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ram\accel.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ram\accel.o: ..\inc/hw_memmap.h
+.\ram\accel.o: ..\driverlib/adc.h
+.\ram\accel.o: ..\driverlib/gpio.h
+.\ram\accel.o: ..\driverlib/pin_map.h
+.\ram\accel.o: ..\driverlib/sysctl.h
+.\ram\accel.o: ..\driverlib/uart.h
+.\ram\accel.o: ..\grlib/grlib.h
+.\ram\accel.o: accel.h

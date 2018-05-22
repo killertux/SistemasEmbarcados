@@ -1,0 +1,15 @@
+.\ram\temp.o: temp.c
+.\ram\temp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\ram\temp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\ram\temp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ram\temp.o: ..\inc/hw_memmap.h
+.\ram\temp.o: ..\inc/hw_types.h
+.\ram\temp.o: ..\inc/hw_i2c.h
+.\ram\temp.o: ..\inc/hw_ints.h
+.\ram\temp.o: ..\driverlib/interrupt.h
+.\ram\temp.o: ..\driverlib/gpio.h
+.\ram\temp.o: ..\driverlib/sysctl.h
+.\ram\temp.o: ..\driverlib/i2c.h
+.\ram\temp.o: ..\driverlib/pin_map.h
+.\ram\temp.o: ..\driverlib/rom_map.h
+.\ram\temp.o: temp.h

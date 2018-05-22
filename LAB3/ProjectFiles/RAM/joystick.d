@@ -1,0 +1,12 @@
+.\ram\joystick.o: joystick.c
+.\ram\joystick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\ram\joystick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ram\joystick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ram\joystick.o: ..\inc/hw_memmap.h
+.\ram\joystick.o: ..\driverlib/adc.h
+.\ram\joystick.o: ..\driverlib/gpio.h
+.\ram\joystick.o: ..\driverlib/pin_map.h
+.\ram\joystick.o: ..\driverlib/sysctl.h
+.\ram\joystick.o: ..\driverlib/uart.h
+.\ram\joystick.o: ..\grlib/grlib.h
+.\ram\joystick.o: joystick.h

@@ -1,0 +1,11 @@
+.\flash\menu_controller.o: Menu_controller.c
+.\flash\menu_controller.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS\RTX\INC\cmsis_os.h
+.\flash\menu_controller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\flash\menu_controller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\flash\menu_controller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\flash\menu_controller.o: ..\grlib/grlib.h
+.\flash\menu_controller.o: cfaf128x128x16.h
+.\flash\menu_controller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\flash\menu_controller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\flash\menu_controller.o: Uart_send.h
+.\flash\menu_controller.o: Menu_controller.h

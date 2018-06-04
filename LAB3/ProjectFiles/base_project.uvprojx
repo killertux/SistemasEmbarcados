@@ -381,19 +381,84 @@
           <GroupName>Source Files</GroupName>
           <Files>
             <File>
-              <FileName>UART.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\UART.h</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
             </File>
             <File>
-              <FileName>UART.c</FileName>
+              <FileName>UART_interrupt.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\UART.c</FilePath>
+              <FilePath>.\UART_interrupt.c</FilePath>
+            </File>
+            <File>
+              <FileName>UART_interrupt.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\UART_interrupt.h</FilePath>
+            </File>
+            <File>
+              <FileName>UART_thread.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UART_thread.c</FilePath>
+            </File>
+            <File>
+              <FileName>UART_thread.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\UART_thread.h</FilePath>
+            </File>
+            <File>
+              <FileName>Menu_controller.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Menu_controller.c</FilePath>
+            </File>
+            <File>
+              <FileName>Red_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Red_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>Red_led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Red_led.h</FilePath>
+            </File>
+            <File>
+              <FileName>Green_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Green_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>Green_led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Green_led.h</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Blue_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Blue_led.h</FilePath>
+            </File>
+            <File>
+              <FileName>rgb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\rgb.c</FilePath>
+            </File>
+            <File>
+              <FileName>Menu_controller.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Menu_controller.h</FilePath>
+            </File>
+            <File>
+              <FileName>Uart_send.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Uart_send.h</FilePath>
+            </File>
+            <File>
+              <FileName>Uart_send.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Uart_send.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -818,19 +883,84 @@
           <GroupName>Source Files</GroupName>
           <Files>
             <File>
-              <FileName>UART.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\UART.h</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
             </File>
             <File>
-              <FileName>UART.c</FileName>
+              <FileName>UART_interrupt.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\UART.c</FilePath>
+              <FilePath>.\UART_interrupt.c</FilePath>
+            </File>
+            <File>
+              <FileName>UART_interrupt.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\UART_interrupt.h</FilePath>
+            </File>
+            <File>
+              <FileName>UART_thread.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UART_thread.c</FilePath>
+            </File>
+            <File>
+              <FileName>UART_thread.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\UART_thread.h</FilePath>
+            </File>
+            <File>
+              <FileName>Menu_controller.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Menu_controller.c</FilePath>
+            </File>
+            <File>
+              <FileName>Red_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Red_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>Red_led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Red_led.h</FilePath>
+            </File>
+            <File>
+              <FileName>Green_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Green_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>Green_led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Green_led.h</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Blue_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>Blue_led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Blue_led.h</FilePath>
+            </File>
+            <File>
+              <FileName>rgb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\rgb.c</FilePath>
+            </File>
+            <File>
+              <FileName>Menu_controller.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Menu_controller.h</FilePath>
+            </File>
+            <File>
+              <FileName>Uart_send.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Uart_send.h</FilePath>
+            </File>
+            <File>
+              <FileName>Uart_send.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Uart_send.c</FilePath>
             </File>
           </Files>
         </Group>

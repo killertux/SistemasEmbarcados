@@ -11,4 +11,12 @@
 .\flash\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\flash\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\flash\main.o: ..\grlib/grlib.h
-.\flash\main.o: UART.h
+.\flash\main.o: UART_interrupt.h
+.\flash\main.o: UART_thread.h
+.\flash\main.o: Menu_controller.h
+.\flash\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\flash\main.o: RGB.h
+.\flash\main.o: Red_led.h
+.\flash\main.o: Green_led.h
+.\flash\main.o: Blue_led.h
+.\flash\main.o: Uart_send.h

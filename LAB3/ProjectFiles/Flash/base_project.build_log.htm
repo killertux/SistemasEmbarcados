@@ -21,44 +21,157 @@ Target DLL:      lmidk-agdi.dll V???
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\base_project.uvprojx
-Project File Date:  05/21/2018
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\base_project.uvprojx
+Project File Date:  06/03/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
 Rebuild Project 'base_project' - Target 'TM4C129 Flash'
 compiling main.c...
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\UART.h(24): warning:  #1295-D: Deprecated declaration init_uart - give arg types
-  void init_uart();
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\UART.h(27): warning:  #1295-D: Deprecated declaration read_byte - give arg types
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_interrupt.h(31): warning:  #1295-D: Deprecated declaration read_byte - give arg types
   void read_byte();
-main.c: 2 warnings, 0 errors
-compiling UART.c...
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\UART.h(24): warning:  #1295-D: Deprecated declaration init_uart - give arg types
-  void init_uart();
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\UART.h(27): warning:  #1295-D: Deprecated declaration read_byte - give arg types
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_thread.h(5): warning:  #1295-D: Deprecated declaration UART_thread - give arg types
+  void UART_thread();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_thread.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(27): warning:  #1295-D: Deprecated declaration menu_controller - give arg types
+  void menu_controller();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(36): warning:  #1295-D: Deprecated declaration draw_menu - give arg types
+  void draw_menu();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(37): warning:  #1295-D: Deprecated declaration clearScreen - give arg types
+  void clearScreen();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(38): warning:  #1295-D: Deprecated declaration sendMessages - give arg types
+  void sendMessages();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(40): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\RGB.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif //__RGB_H__
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Red_led.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Green_led.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Blue_led.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Uart_send.h(12): warning:  #1295-D: Deprecated declaration UART_send - give arg types
+  void UART_send();
+main.c: 13 warnings, 0 errors
+compiling UART_interrupt.c...
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_interrupt.h(31): warning:  #1295-D: Deprecated declaration read_byte - give arg types
   void read_byte();
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\UART.c(33): warning:  #767-D: conversion from pointer to smaller integer
-        *
-ART0DR = (uint32_t)(char)data;
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\UART.c(39): warning:  #1-D: last line of file ends without a newline
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_interrupt.c(75): warning:  #1-D: last line of file ends without a newline
   }
-UART.c: 4 warnings, 0 errors
+UART_interrupt.c: 2 warnings, 0 errors
+compiling UART_thread.c...
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_thread.h(5): warning:  #1295-D: Deprecated declaration UART_thread - give arg types
+  void UART_thread();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_thread.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_interrupt.h(31): warning:  #1295-D: Deprecated declaration read_byte - give arg types
+  void read_byte();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_thread.c(30): warning:  #1-D: last line of file ends without a newline
+  }
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_thread.c(20): warning:  #177-D: variable "status"  was declared but never referenced
+        osStatus status;
+UART_thread.c: 5 warnings, 0 errors
+compiling Menu_controller.c...
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Uart_send.h(12): warning:  #1295-D: Deprecated declaration UART_send - give arg types
+  void UART_send();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(27): warning:  #1295-D: Deprecated declaration menu_controller - give arg types
+  void menu_controller();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(36): warning:  #1295-D: Deprecated declaration draw_menu - give arg types
+  void draw_menu();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(37): warning:  #1295-D: Deprecated declaration clearScreen - give arg types
+  void clearScreen();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(38): warning:  #1295-D: Deprecated declaration sendMessages - give arg types
+  void sendMessages();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.h(40): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.c(158): warning:  #177-D: variable "r"  was declared but never referenced
+        char r, g, b;
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.c(158): warning:  #177-D: variable "g"  was declared but never referenced
+        char r, g, b;
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.c(158): warning:  #177-D: variable "b"  was declared but never referenced
+        char r, g, b;
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.c(147): warning:  #177-D: variable "status"  was declared but never referenced
+        osStatus status;
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Menu_controller.c(275): warning:  #1-D: last line of file ends without a newline
+        
+Menu_controller.c: 11 warnings, 0 errors
+compiling Red_led.c...
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Red_led.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\RGB.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif //__RGB_H__
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Red_led.c(5): warning:  #144-D: a value of type "void (*)(osMessageQId)" cannot be used to initialize an entity of type "os_pthread"
+  
+sThreadDef (red_led, osPriorityNormal, 1, 0);
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Red_led.c(28): warning:  #1-D: last line of file ends without a newline
+  }
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Red_led.c(15): warning:  #177-D: variable "status"  was declared but never referenced
+        osStatus status;
+Red_led.c: 5 warnings, 0 errors
+compiling Green_led.c...
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Green_led.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\RGB.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif //__RGB_H__
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Green_led.c(5): warning:  #144-D: a value of type "void (*)(osMessageQId)" cannot be used to initialize an entity of type "os_pthread"
+  
+sThreadDef (green_led, osPriorityNormal, 1, 0);
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Green_led.c(28): warning:  #1-D: last line of file ends without a newline
+  }
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Green_led.c(15): warning:  #177-D: variable "status"  was declared but never referenced
+        osStatus status;
+Green_led.c: 5 warnings, 0 errors
+compiling Blue_led.c...
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Blue_led.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\RGB.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif //__RGB_H__
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Blue_led.c(5): warning:  #144-D: a value of type "void (*)(osMessageQId)" cannot be used to initialize an entity of type "os_pthread"
+  
+sThreadDef (blue_led, osPriorityNormal, 1, 0);
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Blue_led.c(28): warning:  #1-D: last line of file ends without a newline
+  }
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Blue_led.c(15): warning:  #177-D: variable "status"  was declared but never referenced
+        osStatus status;
+Blue_led.c: 5 warnings, 0 errors
+compiling rgb.c...
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\RGB.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif //__RGB_H__
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\rgb.c(290): warning:  #1-D: last line of file ends without a newline
+  }
+rgb.c: 2 warnings, 0 errors
+compiling Uart_send.c...
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Red_led.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\RGB.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif //__RGB_H__
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Uart_send.h(12): warning:  #1295-D: Deprecated declaration UART_send - give arg types
+  void UART_send();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\UART_interrupt.h(31): warning:  #1295-D: Deprecated declaration read_byte - give arg types
+  void read_byte();
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Uart_send.c(49): warning:  #1-D: last line of file ends without a newline
+  }
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\Uart_send.c(18): warning:  #177-D: variable "status"  was declared but never referenced
+        osStatus status;
+Uart_send.c: 6 warnings, 0 errors
 compiling cfaf128x128x16.c...
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\cfaf128x128x16.c(880): warning:  #1-D: last line of file ends without a newline
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\cfaf128x128x16.c(880): warning:  #1-D: last line of file ends without a newline
   //*****************************************************************************
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\cfaf128x128x16.c(770): warning:  #177-D: function "ssiSetDataMode"  was declared but never referenced
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\cfaf128x128x16.c(770): warning:  #177-D: function "ssiSetDataMode"  was declared but never referenced
   ssiSetDataMode(uint8_t mode) {
-C:\Users\clemente\Desktop\LAB3\ProjectFiles\cfaf128x128x16.c(777): warning:  #177-D: function "ssiSetClockDivider"  was declared but never referenced
+C:\Users\clemente\Desktop\LAB3_serious\LAB3\ProjectFiles\cfaf128x128x16.c(777): warning:  #177-D: function "ssiSetClockDivider"  was declared but never referenced
   ssiSetClockDivider(uint8_t divider){
 cfaf128x128x16.c: 3 warnings, 0 errors
 compiling RTX_Conf_CM.c...
 assembling startup_TM4C129.s...
 compiling system_TM4C129.c...
 linking...
-Program Size: Code=6190 RO-data=638 RW-data=60 ZI-data=9836  
+Program Size: Code=14984 RO-data=2952 RW-data=3540 ZI-data=14036  
 FromELF: creating hex file...
-".\Flash\base_project.axf" - 0 Error(s), 9 Warning(s).
+".\Flash\base_project.axf" - 0 Error(s), 57 Warning(s).
 
 <h2>Software Packages used:</h2>
 

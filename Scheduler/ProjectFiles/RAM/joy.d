@@ -1,0 +1,12 @@
+.\ram\joy.o: joy.c
+.\ram\joy.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\ram\joy.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ram\joy.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ram\joy.o: ..\inc/hw_memmap.h
+.\ram\joy.o: ..\driverlib/adc.h
+.\ram\joy.o: ..\driverlib/gpio.h
+.\ram\joy.o: ..\driverlib/pin_map.h
+.\ram\joy.o: ..\driverlib/sysctl.h
+.\ram\joy.o: ..\driverlib/uart.h
+.\ram\joy.o: ..\grlib/grlib.h
+.\ram\joy.o: joy.h

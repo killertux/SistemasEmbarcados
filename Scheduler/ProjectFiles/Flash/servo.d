@@ -1,0 +1,10 @@
+.\flash\servo.o: servo.c
+.\flash\servo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\flash\servo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\flash\servo.o: ..\inc/hw_memmap.h
+.\flash\servo.o: ..\driverlib/pin_map.h
+.\flash\servo.o: ..\driverlib/gpio.h
+.\flash\servo.o: ..\driverlib/sysctl.h
+.\flash\servo.o: ..\driverlib/timer.h
+.\flash\servo.o: ..\driverlib/rom_map.h
+.\flash\servo.o: servo.h

@@ -1,0 +1,10 @@
+.\flash\rgb.o: rgb.c
+.\flash\rgb.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\flash\rgb.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\flash\rgb.o: ..\inc/hw_memmap.h
+.\flash\rgb.o: ..\driverlib/gpio.h
+.\flash\rgb.o: ..\driverlib/sysctl.h
+.\flash\rgb.o: ..\driverlib/pin_map.h
+.\flash\rgb.o: ..\driverlib/rom_map.h
+.\flash\rgb.o: ..\driverlib/pwm.h
+.\flash\rgb.o: rgb.h

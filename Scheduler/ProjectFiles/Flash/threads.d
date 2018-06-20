@@ -1,0 +1,14 @@
+.\flash\threads.o: Threads.c
+.\flash\threads.o: Threads.h
+.\flash\threads.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS\RTX\INC\cmsis_os.h
+.\flash\threads.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\flash\threads.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\flash\threads.o: ThreadCalculations.h
+.\flash\threads.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\flash\threads.o: DisplayUtils.h
+.\flash\threads.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\flash\threads.o: ..\grlib/grlib.h
+.\flash\threads.o: cfaf128x128x16.h
+.\flash\threads.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\flash\threads.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\flash\threads.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

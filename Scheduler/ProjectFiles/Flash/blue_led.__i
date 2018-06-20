@@ -1,0 +1,7 @@
+-c --cpu Cortex-M4.fp -D__RTX -D__EVAL -g -O1 --apcs=interwork -I ..
+-I "C:\Users\DAELN\Downloads\SistemasEmbarcados-master\LAB3 - Cópia\ProjectFiles\RTE"
+-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\RTOS\RTX\INC
+-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129
+-D__UVISION_VERSION="518" -D_RTE_ -DTM4C1294NCPDT -Drvmdk -DPART_TM4C1294NCPDT -DTARGET_IS_TM4C129_RA0
+-o .\flash\blue_led.o --omf_browse .\flash\blue_led.crf --depend .\flash\blue_led.d "Blue_led.c"

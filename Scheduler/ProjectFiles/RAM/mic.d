@@ -1,0 +1,12 @@
+.\ram\mic.o: mic.c
+.\ram\mic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\ram\mic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ram\mic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ram\mic.o: ..\inc/hw_memmap.h
+.\ram\mic.o: ..\driverlib/adc.h
+.\ram\mic.o: ..\driverlib/gpio.h
+.\ram\mic.o: ..\driverlib/pin_map.h
+.\ram\mic.o: ..\driverlib/sysctl.h
+.\ram\mic.o: ..\driverlib/uart.h
+.\ram\mic.o: ..\grlib/grlib.h
+.\ram\mic.o: mic.h

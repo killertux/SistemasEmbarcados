@@ -1,0 +1,10 @@
+.\ram\rgb.o: rgb.c
+.\ram\rgb.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\ram\rgb.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ram\rgb.o: ..\inc/hw_memmap.h
+.\ram\rgb.o: ..\driverlib/gpio.h
+.\ram\rgb.o: ..\driverlib/sysctl.h
+.\ram\rgb.o: ..\driverlib/pin_map.h
+.\ram\rgb.o: ..\driverlib/rom_map.h
+.\ram\rgb.o: ..\driverlib/pwm.h
+.\ram\rgb.o: rgb.h

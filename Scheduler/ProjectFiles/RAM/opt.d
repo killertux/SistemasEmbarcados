@@ -1,0 +1,14 @@
+.\ram\opt.o: opt.c
+.\ram\opt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\ram\opt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ram\opt.o: ..\inc/hw_memmap.h
+.\ram\opt.o: ..\inc/hw_types.h
+.\ram\opt.o: ..\inc/hw_i2c.h
+.\ram\opt.o: ..\inc/hw_ints.h
+.\ram\opt.o: ..\driverlib/gpio.h
+.\ram\opt.o: ..\driverlib/sysctl.h
+.\ram\opt.o: ..\driverlib/i2c.h
+.\ram\opt.o: ..\driverlib/pin_map.h
+.\ram\opt.o: ..\driverlib/rom_map.h
+.\ram\opt.o: ..\driverlib/interrupt.h
+.\ram\opt.o: opt.h

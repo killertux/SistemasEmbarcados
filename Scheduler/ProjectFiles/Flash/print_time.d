@@ -1,0 +1,9 @@
+.\flash\print_time.o: Print_time.c
+.\flash\print_time.o: Print_time.h
+.\flash\print_time.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS\RTX\INC\cmsis_os.h
+.\flash\print_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\flash\print_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\flash\print_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\flash\print_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\flash\print_time.o: ..\grlib/grlib.h
+.\flash\print_time.o: cfaf128x128x16.h

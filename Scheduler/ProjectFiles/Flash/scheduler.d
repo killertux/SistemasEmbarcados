@@ -1,0 +1,15 @@
+.\flash\scheduler.o: Scheduler.c
+.\flash\scheduler.o: Scheduler.h
+.\flash\scheduler.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS\RTX\INC\cmsis_os.h
+.\flash\scheduler.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\flash\scheduler.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\flash\scheduler.o: Threads.h
+.\flash\scheduler.o: ThreadCalculations.h
+.\flash\scheduler.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\flash\scheduler.o: DisplayUtils.h
+.\flash\scheduler.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\flash\scheduler.o: ..\grlib/grlib.h
+.\flash\scheduler.o: cfaf128x128x16.h
+.\flash\scheduler.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\flash\scheduler.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\flash\scheduler.o: UART.h
